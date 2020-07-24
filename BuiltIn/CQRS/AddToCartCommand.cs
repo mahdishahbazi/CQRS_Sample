@@ -8,8 +8,8 @@ namespace BuiltIn.CQRS
 {
     public class AddToCartCommand : ICommand
     {
-        public string Item { get; }
-        public int Quantity { get; }
+        public string Item { get; set; }
+        public int Quantity { get; set; }
 
         public AddToCartCommand()
         {
